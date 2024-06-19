@@ -10,20 +10,30 @@
 </head>
 <body>
   <main>
+    <!-- Título del formulario -->
     <h1>Contact Us</h1>
+
+    <!-- Formulario de contacto -->
     <form id="contact-form">
+      <!-- Sección para el nombre -->
       <section>
         <label for="first-name">First Name</label>
         <input type="text" id="first-name" name="first-name" required>
       </section>
+
+      <!-- Sección para el apellido -->
       <section>
         <label for="last-name">Last Name</label>
         <input type="text" id="last-name" name="last-name" required>
       </section>
+
+      <!-- Sección para el correo electrónico -->
       <section>
         <label for="email">Email Address</label>
         <input type="email" id="email" name="email" required>
       </section>
+
+      <!-- Sección para el tipo de consulta -->
       <section>
         <label for="query-type">Query Type</label>
         <select id="query-type" name="query-type" required>
@@ -32,18 +42,28 @@
           <option value="support-request">Support Request</option>
         </select>
       </section>
+
+      <!-- Sección para el mensaje -->
       <section>
         <label for="message">Message</label>
         <textarea id="message" name="message" required></textarea>
       </section>
+
+      <!-- Sección para el consentimiento -->
       <section>
         <input type="checkbox" id="consent" name="consent" required>
         <label for="consent">I consent to being contacted by the team</label>
       </section>
+
+      <!-- Botón de envío -->
       <button type="submit">Submit</button>
     </form>
+
+    <!-- Mensaje de respuesta -->
     <div id="response-message"></div>
   </main>
+
+  <!-- Script para manejar el formulario -->
   <script src="./assets/JavaScript/script.js"></script>
 </body>
 </html>
